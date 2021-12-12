@@ -15,13 +15,14 @@ body{
 
 button{
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     cursor: pointer;
     padding: 1rem 2rem;
     border: 3px solid hotpink;
     background: hotpink;
     color: white;
     transition: all 0.5s ease;
+    letter-spacing: 3px;
 
     &:hover{
         background-color: crimson;
