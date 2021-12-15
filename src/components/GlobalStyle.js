@@ -11,23 +11,67 @@ const GlobalStyle = createGlobalStyle`
 
 body{
     background: white;
+    overflow-x: hidden
+}
+
+html{
+    @media (max-width:  1700px){
+        font-size: 70%;
+    }
+    @media (max-width:1300px){
+        font-size: 60%;
+    }
+    overflow-x: hidden
+}
+
+.para-icon{
+    display: flex;
+    justify-content: flex-start;
+    @media (max-width: 1300px){
+        justify-content: center;
+    }
+    
+    
+    p{
+        margin-left: 20px;
+    }
+}
+
+.cnt-btn{
+
+   margin-top: 40px;
+   margin-bottom: 40px;
+   a{
+       text-decoration: none;
+       color: hotpink;
+       &:hover{
+           color: white;
+       }
+   }
 }
 
 button{
     font-weight: bold;
     font-size: 1.7rem;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 3.5rem 1.5rem;
     border: 3px solid hotpink;
-    background: hotpink;
-    color: white;
+    background: transparent;
+    color: hotpink;
     transition: all 0.5s ease;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    border-radius: 50%;
+    
+    @media (max-width:1300px){
+        margin-top: 20px;
+    }
 
     &:hover{
-        background-color: crimson;
+        background-color: hotpink;
         color: white;
     }
+
+    
 
     
 }
@@ -36,6 +80,9 @@ h2{
         font-weight: lighter;
         font-size: 3rem;
         color: grey;
+        @media (max-width:1300px){
+        font-size: 3.5rem;
+    }
 
     }
     h3{
@@ -49,7 +96,32 @@ h2{
     }
 
     a{
-        font-size: 1.1rem;
+
+        {
+        font-size: 1.6rem;
+        transition: all 0.5s ease;
+        letter-spacing: 2px;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        font-weight: bold;
+    
+
+        }
+    &:hover{
+        background-color: hotpink;
+        color: white;
+
+        #logo{
+           &:hover{
+               background-color: none;
+           }
+        }
+    }
+     
+    
+        
+        
+        
     }
 
     span{
@@ -61,6 +133,9 @@ h2{
         color: grey;
         font-size: 1.4rem;
         line-height: 150%;
+        @media (max-width:1300px){
+        padding: 1.5rem;
+    }
     }
 
 

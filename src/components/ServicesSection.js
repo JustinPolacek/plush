@@ -7,6 +7,9 @@ import plush2 from '../img/plush2.jpeg';
 import service from '../img/servicephoto.jpeg';
 import service2 from '../img/service2.jpeg'
 import styled from 'styled-components';
+import ModalVideo from 'react-modal-video'
+import StyleVideo  from '../components/StyleVideo.scss'
+import React,{useState} from 'react';
 
 import {About, Description, Image, Hide} from '../styles';
 
@@ -14,6 +17,7 @@ import {About, Description, Image, Hide} from '../styles';
 
 
 const ServicesSection = () => {
+    const [isOpen, setOpen] = useState(false)
     return (
         <Services> 
         <Description className ="description">
@@ -24,31 +28,29 @@ const ServicesSection = () => {
                         <img src={dogbath} alt="dog-bath"/>
                         <h3>BATHING</h3>
                     </div>
-                    <p>Efficient cleaning</p>
+                    <p>Bathing Services</p>
                 </Card>
                 <Card>
                     <div className="icon">
                         <img src={dogcut} />
                         <h3>GROOMING</h3>
                     </div>
-                    <p>Efficient cleaning</p>
+                    <p>Grooming Services</p>
                 </Card>
                 <Card>
                     <div className='icon'>
                         <img src={scissors} />
                         <h3>NAIL TRIM</h3>
                     </div>
-                    <p>Efficient cleaning</p>
+                    <p>Nail Trimming</p>
                 </Card>
-                <Card>
-                    <div className='icon'>
-                        <img src={doggroom} />
-                        <h3>PLUSH</h3>
-                    </div>
-                    <p>Efficient cleaning</p>
-                </Card>
+              
             </Cards>
-            </Description> 
+            
+            <ModalVideo channel='youtube' autoPlay="autoplay muted"  loop="loop"  videoId="L-9q2M81bc4" isOpen={isOpen}  onClose={() => setOpen(false)} />
+            <button className="btn-primary" onClick={()=> setOpen(true)}> VIDEO </button>
+            </Description>
+             
             <Image >
                <img src={service2} />
             </Image>
@@ -67,6 +69,7 @@ h2{
 p{
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+    font-size: 22px;
 }
 
 `
@@ -75,12 +78,22 @@ img{
     height: 40px;
     width: 40px;
     color: pink;
+    @media (max-width:1300px){
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
 `
 
 const Cards =styled.div`
 display: flex;
 flex-wrap: wrap;
+@media (max-width:1300px){
+        justify-content: center;
+        align-items: center;
+        
+    }
 
 `
 const Card =styled.div`
@@ -92,10 +105,15 @@ const Card =styled.div`
          margin-left: 1rem;
          color: hotpink;
          padding: 1rem;
+         font-size: 20px;
      }
      img{
          height: 60px;
          width: 60px;
+         @media (max-width:1300px){
+         height: 40px
+         width: 40px;
+    }
 
      }
  }
