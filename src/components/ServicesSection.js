@@ -64,7 +64,7 @@ const ServicesSection = () => {
                 </Card>
             </Cards>
             
-            <ModalVideo channel='youtube' autoPlay="autoplay muted"  loop="loop"  videoId="L-9q2M81bc4" isOpen={isOpen}  onClose={() => setOpen(false)} />
+            <ModalVideo channel="youtube" autoPlay muted   loop="loop"  videoId="L-9q2M81bc4" isOpen={isOpen}  onClose={() => setOpen(false)} />
             <button className="btn-primary" onClick={()=> setOpen(true)}> VIDEO </button>
             </Description>
              

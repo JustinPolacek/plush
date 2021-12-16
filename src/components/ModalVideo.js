@@ -9,7 +9,15 @@ const App = () => {
 
 	return (
 		<React.Fragment>
-			<ModalVideo channel='youtube' autoPlay="autoplay" muted="muted"  videoId="L61p2uyiMSo" isOpen={isOpen}  onClose={() => setOpen(false)} />
+			<ModalVideo  channel="youtube"
+           channel="youtube"
+		   youtube={{
+			 autoplay: 1,
+			 mute: 1
+		   }}
+		 
+		 
+  videoId="L61p2uyiMSo" isOpen={isOpen}  onClose={() => setOpen(false)} />
 
 			<button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
 		</React.Fragment>

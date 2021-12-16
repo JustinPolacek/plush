@@ -39,7 +39,7 @@ const AboutYou = () => {
                         I'm happy to say that every dog that we groom here at our Family Owned Business
                         is like our own and we put everything that we stand behind into our work. 
                         We're so lucky to have this awesome community of ours, and only look forward to
-                        what the future will bring! From my family to yours. <br/> <br/>
+                        what the future will bring! From our family to yours. <br/> <br/>
                         
                        
                         -Roxy & Vince

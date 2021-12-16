@@ -48,7 +48,7 @@ export const fade = {
 };
 
 export const slider = {
-    hidden: {x: '-130%', skew: '45deg'},
+    hidden: {x: '-100%', skew: '50deg'},
     show:{
         x: '100%',
         skew: '0deg',
