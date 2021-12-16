@@ -10,57 +10,40 @@ import styled from 'styled-components';
 import ModalVideo from 'react-modal-video'
 import StyleVideo  from '../components/StyleVideo.scss'
 import React,{useState} from 'react';
-import { motion } from 'framer-motion';
-import {pageAnimation, slider, sliderContainer} from '../components/animation';
+import {motion } from 'framer-motion';
+import { pageAnimation } from '../components/animation';
 
 import {About, Description, Image, Hide} from '../styles';
+import { motionValue } from 'framer-motion/dist/framer-motion.cjs';
 
 
 
 
-const ServicesSection = () => {
+const AboutYou = () => {
     const [isOpen, setOpen] = useState(false)
     return (
-        
-        
-        <Services exit="exit" variants={pageAnimation} initial="hidden" animate="show"> 
-
-        <motion.div variants={sliderContainer}>
-        <Frame1 variants={slider}></Frame1>
-        <Frame2 variants={slider}></Frame2>
-        <Frame3 variants={slider}></Frame3>
-        <Frame4 variants={slider}></Frame4>
-        </motion.div>
+        <Services variants={pageAnimation} initial="hidden" animate="show"> 
         <Description className ="description">
-            <h2>High <span>quality</span> services</h2>
+            <h2>Family <span>Owned</span> Business</h2>
             <Cards>
                 <Card>
                     <div className="icon">
-                        <img src={dogbath} alt="dog-bath"/>
-                        <h3>BATHING</h3>
+                        <h3>Our Story</h3>
                     </div>
-                    <p>Bathing Services</p>
-                </Card>
-                <Card>
-                    <div className="icon">
-                        <img src={dogcut} />
-                        <h3>GROOMING</h3>
-                    </div>
-                    <p>Grooming Services</p>
-                </Card>
-                <Card>
-                    <div className='icon'>
-                        <img src={scissors} />
-                        <h3>NAIL TRIM</h3>
-                    </div>
-                    <p>Nail Trimming</p>
-                </Card>
-                <Card>
-                    <div className='icon'>
-                        <img src={doggroom} />
-                        <h3>CUSTOMIZE</h3>
-                    </div>
-                    <p>Selections</p>
+                    <p>We opened opened our doors for business in 2016. In the heart of
+                        the Inland Empire. Riverside, CA. My name is Roxy! And here at Plush Pups 
+                        we pride ourselves in our work, ethics, and creativity. I've always
+                        loved animals since a young girl. When I would help my parents
+                        tend to our "Farm" of animals growing up. I've always wanted to
+                        work with animals as my passion. And here at Plush Pups I get to do that.
+                        I'm happy to say that every dog that we groom here at our Family Owned Business
+                        is like our own and we put everything that we stand behind into our work. 
+                        We're so lucky to have this awesome community of ours, and only look forward to
+                        what the future will bring! From my family to yours. <br/> <br/>
+                        
+                       
+                        -Roxy & Vince
+                    </p>
                 </Card>
             </Cards>
             
@@ -72,7 +55,6 @@ const ServicesSection = () => {
                <img src={service2} />
             </Image>
             </Services>
-            
         
     )
 }
@@ -80,6 +62,7 @@ const ServicesSection = () => {
 //styled components //
 
 const Services =styled(motion.div)`
+
 
 min-height: 90vh;
 display: flex;
@@ -93,14 +76,18 @@ color: white;
         text-align: center;
         width: 100%;
         
+    
+
+
+
+
+
 
 
 h2{
     padding-bottom: 5rem;
-    margin-bottom: 2rem;
 }
 p{
-    width: 100%;
     padding: 2rem 0rem 4rem 0rem;
     font-size: 22px;
 }
@@ -122,8 +109,6 @@ img{
 const Cards =styled.div`
 display: flex;
 flex-wrap: wrap;
-margin-top: 100px;
-
 @media (max-width:1300px){
         justify-content: center;
         align-items: center;
@@ -136,53 +121,24 @@ const Card =styled.div`
  .icon{
      display: flex;
      align-items: center;
+     justify-content: center;
      h3{
          margin-left: 1rem;
+         margin-top: 20px;
          color: hotpink;
          padding: 1rem;
-         font-size: 20px;
+         font-size: 30px;
      }
      img{
-         height: 40px;
-         width:40px;
+         height: 60px;
+         width: 60px;
          @media (max-width:1300px){
          height: 40px
          width: 40px;
     }
 
      }
- };
-
-
-
-`
-
- //Frame Animaton //
-
-
-
- const Frame1 = styled(motion.div)`
- position: fixed;
- left: 0;
- top: 10%;
- width: 100%;
- height: 100vh; 
- background: hotpink;
- z-index: 2;
- 
- `
-
- const Frame2 = styled(Frame1)`
- background: lightpink;
- 
- `
-
-const Frame3 = styled(Frame1)`
-background: white;
-`
-const Frame4 = styled(Frame1)`
-background: coral;
-
+ }
 
 `
 
@@ -191,4 +147,4 @@ background: coral;
 
 
 
-export default ServicesSection;
+export default AboutYou;

@@ -2,7 +2,8 @@ import paw from "../img/pawprint.png"
 import logo from "../img/logo.png";
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
-import { Routes, Route, Link} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 import ServicesSection from '../components/ServicesSection';
 import Contact from '../components/Contact'
 
@@ -13,20 +14,20 @@ const Nav = () => {
     return (
         <StyledNav>
        
-            <h1>   <a  id="logo" href="#"> <img src={logo} /></a></h1>
+            <h1>   <Link path to="AboutSection"  id="logo" href="#"> <img src={logo} /></Link></h1>
       
             <ul >
                 
                    <li > 
-                       <Link to='AboutSection'>ABOUT</Link>
+                       <Link path to="AboutSection">ABOUT</Link>
                    
                    </li> 
                     <li> 
-                         <Link to='ServicesSection'>SERVICES</Link>
+                         <Link path to="ServicesSection">SERVICES</Link>
                     </li>
                     <li>
 
-                    <Link to='Contact'>CONTACT</Link>
+                    <Link path to="Contact">CONTACT</Link>
 
                     </li>
 

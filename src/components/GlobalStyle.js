@@ -88,6 +88,7 @@ h2{
     h3{
         color: grey;
 
+
     }
 
     h4{
@@ -111,9 +112,13 @@ h2{
         background-color: hotpink;
         color: white;
 
-        #logo{
-           &:hover{
-               background-color: none;
+        #logo {
+
+            a{
+                &:hover{
+               background-color: white;
+            }
+          
            }
         }
     }

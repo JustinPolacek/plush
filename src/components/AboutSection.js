@@ -4,12 +4,23 @@ import styled from 'styled-components';
 import Tele from '../img/telephone.png';
 import {About, Description, Image, Hide} from '../styles';
 import {motion} from 'framer-motion';
-import {pageAnimation, titleAnim, fade } from '../components/animation';
+import {pageAnimation, titleAnim, fade,slider, sliderContainer } from '../components/animation';
+import ServicesSection from './ServicesSection';
+import AboutYou from '../components/AboutYou';
+
+
 const AboutSection = () => {
 
  
     return (
-        <About>
+        <>
+        <About >
+        <motion.div variants={sliderContainer}>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}></Frame4>
+        </motion.div>
             <Description>
                 <motion.div variants={pageAnimation} initial="hidden" animate="show"  className='title'>
                     <Hide>
@@ -35,12 +46,40 @@ const AboutSection = () => {
                 
             </Description>
             <Image>
-                <img src={Plush}  alt="poodle-dog"/>
+                <motion.img src={Plush}  alt="poodle-dog"></motion.img>
             </Image>
-            
         </About>
+         <AboutYou/>
+        </>
     )
 }
+
+
+
+const Frame1 = styled(motion.div)`
+position: fixed;
+left: 0;
+top: 10%;
+width: 100%;
+height: 100vh; 
+background: hotpink;
+z-index: 2;
+
+`
+
+const Frame2 = styled(Frame1)`
+background: lightpink;
+
+`
+
+const Frame3 = styled(Frame1)`
+background: white;
+`
+const Frame4 = styled(Frame1)`
+background: coral;
+
+
+`
 
 
 

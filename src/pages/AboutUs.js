@@ -5,19 +5,29 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import {motion} from 'framer-motion';
 import { pageAnimation, titleAnim } from '../components/animation';
-import { Routes, Route, Link} from 'react-router-dom';
-
+import { Routes, Route, Link,useLocation} from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 const AboutUs = () => {
+    const location = useLocation();
     return (
 
+
         <>
-        <motion.div variants={pageAnimation} initial="hidden" animate="show">
-              <Routes>
-               <Route path='AboutSection' element={<AboutSection/>}/>
+        <motion.div 
+        exit="exit"
+        variants={pageAnimation}
+         initial="hidden"
+         animate="show">
+             <AnimatePresence exitBeforeEnter>
+              <Routes location={location} key={location.pathname}>
+               <Route path='/' element={<AboutSection />}/>
+               <Route path='AboutSection' element={<AboutSection />}/>
+
                <Route path= 'ServicesSection' element= {<ServicesSection/>}/>
                <Route path='Contact' element={<Contact/>} />
               
                </Routes>
+               </AnimatePresence>
                <Footer />
                
                </motion.div>

@@ -3,8 +3,10 @@ import styled from "styled-components";
 import Map from "../img/map.png";
 import Phone from "../img/phone.png";
 import Send from "../img/send.png";
+import {motion} from 'framer-motion';
+import {pageAnimation, titleAnim, fade } from '../components/animation';
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   height: 100vh;
   background-color: white;
 `;
@@ -134,7 +136,7 @@ const AddressItem = styled.div`
   font-weight: bold;
 
   @media only screen and (max-width: 480px) {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     margin-left: 20px;
   }
 `;
@@ -168,7 +170,7 @@ const Text = styled.span`
 
 const Contact = () => {
   return (
-    <Container>
+    <Container  variants={pageAnimation} initial="hidden" animate="show"  className='title'>
       <Wrapper>
         <FormContainer>
           <Title>
