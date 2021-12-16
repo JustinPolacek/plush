@@ -4,14 +4,14 @@ import styled from 'styled-components';
 import Tele from '../img/telephone.png';
 import {About, Description, Image, Hide} from '../styles';
 import {motion} from 'framer-motion';
-import { titleAnim, fade } from '../components/animation';
+import {pageAnimation, titleAnim, fade } from '../components/animation';
 const AboutSection = () => {
 
  
     return (
         <About>
             <Description>
-                <motion.div  className='title'>
+                <motion.div variants={pageAnimation} initial="hidden" animate="show"  className='title'>
                     <Hide>
                         <motion.h2 variants={titleAnim}  >We work to make</motion.h2>
                     </Hide>

@@ -2,6 +2,10 @@ import paw from "../img/pawprint.png"
 import logo from "../img/logo.png";
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
+import { Routes, Route, Link} from 'react-router-dom';
+import ServicesSection from '../components/ServicesSection';
+import Contact from '../components/Contact'
+
 
 
 
@@ -9,20 +13,20 @@ const Nav = () => {
     return (
         <StyledNav>
        
-            <h1>   <a id="logo" href="#"> <img src={logo} /></a></h1>
+            <h1>   <a  id="logo" href="#"> <img src={logo} /></a></h1>
       
             <ul >
                 
                    <li > 
-                       <a  href="#">ABOUT</a>
+                       <Link to='AboutSection'>ABOUT</Link>
                    
                    </li> 
                     <li> 
-                         <a href="#">SERVICES</a>
+                         <Link to='ServicesSection'>SERVICES</Link>
                     </li>
                     <li>
 
-                    <a href="#">CONTACT</a>
+                    <Link to='Contact'>CONTACT</Link>
 
                     </li>
 
