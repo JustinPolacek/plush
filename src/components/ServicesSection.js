@@ -25,14 +25,9 @@ const ServicesSection = () => {
         
         <Services exit="exit" variants={pageAnimation} initial="hidden" animate="show"> 
 
-        <motion.div variants={sliderContainer}>
-        <Frame1 variants={slider}></Frame1>
-        <Frame2 variants={slider}></Frame2>
-        <Frame3 variants={slider}></Frame3>
-        <Frame4 variants={slider}></Frame4>
-        </motion.div>
+      
         <Description className ="description">
-            <h2>High <span>quality</span> services</h2>
+            <h2>High <span>Quality</span> Services</h2>
             <Cards>
                 <Card>
                     <div className="icon">
@@ -96,8 +91,9 @@ color: white;
 
 
 h2{
-    padding-bottom: 5rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 20px;
 }
 p{
     width: 100%;
@@ -122,7 +118,7 @@ img{
 const Cards =styled.div`
 display: flex;
 flex-wrap: wrap;
-margin-top: 100px;
+margin-top: 80px;
 
 @media (max-width:1300px){
         justify-content: center;

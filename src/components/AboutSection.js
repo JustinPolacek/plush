@@ -35,7 +35,7 @@ const AboutSection = () => {
                         <motion.h2 variants={titleAnim} >true</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.button variants={fade} className='cnt-btn'> <a href="tel:+9514817899">Contact</a></motion.button>
+                <motion.button variants={fade} className='cnt-btn'> <a href="tel:+9514817899">CONTACT</a></motion.button>
 
                 <div className='para-icon'>
                 <motion.a variants={fade} href="https://www.instagram.com/plushpupspetspa/?hl=en"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></motion.a>

@@ -34,9 +34,13 @@ const FormContainer = styled.div`
 
 const Title = styled.h1`
   margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: 135px;
+
   color: hotpink;
   @media only screen and (max-width: 480px) {
-    margin-left: 100px;
+    margin-left: 80px;
+    
 
     
     @media only screen and (max-width: 1300) {

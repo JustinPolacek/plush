@@ -30,19 +30,20 @@ const AboutYou = () => {
                     <div className="icon">
                         <h3>Our Story</h3>
                     </div>
-                    <p>We opened opened our doors for business in 2016. In the heart of
-                        the Inland Empire. Riverside, CA. My name is Roxy! And here at Plush Pups 
-                        we pride ourselves in our work, ethics, and creativity. I've always
+                    <p classname="intro"> <p>Hello!</p> I am <span>Roxy! </span>
+                        We  opened Plush Pups in 2016. In the heart of
+                        the Inland Empire. Riverside, CA. I've always
                         loved animals since a young girl. When I would help my parents
                         tend to our "Farm" of animals growing up. I've always wanted to
                         work with animals as my passion. And here at Plush Pups I get to do that.
-                        I'm happy to say that every dog that we groom here at our Family Owned Business
+                        I'm happy to say that every dog that we groom here at our <span> Family Owned Business </span>
                         is like our own and we put everything that we stand behind into our work. 
-                        We're so lucky to have this awesome community of ours, and only look forward to
+                        We're so lucky to have this awesome community of ours to pour our  
+                          hearts, souls, and creativity into. We look forward to
                         what the future will bring! From our family to yours. <br/> <br/>
                         
                        
-                        -Roxy & Vince
+                       <span> -Roxy & Vince </span>
                     </p>
                 </Card>
             </Cards>
@@ -70,19 +71,12 @@ align-items: center;
 justify-content: space-between;
 padding: 5rem 10rem;
 color: white;
+margin-bottom: 50px;
 @media (max-width:1300px){
         display: block;
         padding: 2rem 2rem;
         text-align: center;
         width: 100%;
-        
-    
-
-
-
-
-
-
 
 h2{
     padding-bottom: 5rem;
@@ -102,6 +96,11 @@ img{
         justify-content: center;
         align-items: center;
         
+        @media (max-width: 480px){
+            h3{
+                font-size:
+            }
+        }
     }
 }
 `
@@ -122,6 +121,7 @@ const Card =styled.div`
      display: flex;
      align-items: center;
      justify-content: center;
+     text-align: center;
      h3{
          margin-left: 1rem;
          margin-top: 20px;

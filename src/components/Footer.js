@@ -6,6 +6,8 @@ const Container = styled.div`
   height: 30%;
   background-color: hotpink;
   color: lightgray;
+  display: flex;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
@@ -19,16 +21,16 @@ const Wrapper = styled.div`
 
 const List = styled.ul`
   padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
 `;
 
 const ListItem = styled.li`
-  margin-right: 20px;
+  display: flex;
+  justify-content: center;
   @media only screen and (max-width: 480px) {
-    margin-right: 10px;
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 const Copyright = styled.span`
@@ -42,12 +44,10 @@ const Footer = () => {
     <Container>
       <Wrapper>
         <List>
-          <ListItem>Guide</ListItem>
-          <ListItem>Support</ListItem>
-          <ListItem>Guide</ListItem>
-          <ListItem>Contact</ListItem>
+          <a href="https://www.instagram.com/plushpupspetspa/?hl=en"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+          <a   href="https://www.facebook.com/plushpupspetboutiqueandspa/"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a>         
+          <a  href="https://www.yelp.com/biz/plush-pups-pet-boutique-and-spa-riverside"><img src="https://img.icons8.com/color/48/000000/yelp.png"/></a>
         </List>
-        <Copyright>Justin Polacek</Copyright>
       </Wrapper>
     </Container>
   );

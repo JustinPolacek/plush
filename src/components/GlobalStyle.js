@@ -39,36 +39,47 @@ html{
 
 .cnt-btn{
 
-   margin-top: 40px;
-   margin-bottom: 40px;
+   margin-top: 60px;
+   margin-bottom: 60px;
+
+  
+   
    a{
-       text-decoration: none;
+   &:hover{
        color: hotpink;
-       &:hover{
-           color: white;
-       }
+       
+
+
    }
 }
+}
+
 
 button{
     font-weight: bold;
     font-size: 1.7rem;
+    padding: 2rem 2rem;
     cursor: pointer;
-    padding: 3.5rem 1.5rem;
     border: 3px solid hotpink;
     background: transparent;
     color: hotpink;
     transition: all 0.5s ease;
+    border-radius: 10px;
     letter-spacing: 2px;
-    border-radius: 50%;
     
     @media (max-width:1300px){
         margin-top: 20px;
     }
+    a{
+        color: hotpink;
+        letter-spacing: 1px;
+        &:hover{
+            
+        }
+    }
 
     &:hover{
-        background-color: hotpink;
-        color: white;
+        background-color: pink;
     }
 
     
@@ -105,26 +116,15 @@ h2{
         padding: 1rem 1rem;
         border-radius: 8px;
         font-weight: bold;
+        text-decoration: none;
+        color: hotpink;
     
+        &:hover{
+            color: crimson;
+        }
 
         }
-    &:hover{
-        background-color: hotpink;
-        color: white;
 
-        #logo {
-
-            a{
-                &:hover{
-               background-color: white;
-            }
-          
-           }
-        }
-    }
-     
-    
-        
         
         
     }
