@@ -10,6 +10,21 @@ const Container = styled.div`
   justify-content: center;
 `;
 
+const Designer = styled.div`
+font-size: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+a{
+  color: black;
+}
+@media only screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+
+
+`
+
 const Wrapper = styled.div`
   padding: 20px;
   display: flex;
@@ -49,6 +64,10 @@ const Footer = () => {
           <a  href="https://www.yelp.com/biz/plush-pups-pet-boutique-and-spa-riverside"><img src="https://img.icons8.com/color/48/000000/yelp.png"/></a>
         </List>
       </Wrapper>
+      <Designer>
+        <p>Designed by </p>
+        <a href="https://www.justinpolacek.com">JustinPolacek.com</a>
+      </Designer>
     </Container>
   );
 };

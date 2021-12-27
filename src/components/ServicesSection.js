@@ -34,28 +34,28 @@ const ServicesSection = () => {
                         <img src={dogbath} alt="dog-bath"/>
                         <h3>BATHING</h3>
                     </div>
-                    <p>Bathing Services</p>
+                    <p></p>
                 </Card>
                 <Card>
                     <div className="icon">
                         <img src={dogcut} />
                         <h3>GROOMING</h3>
                     </div>
-                    <p>Grooming Services</p>
+                    <p></p>
                 </Card>
                 <Card>
                     <div className='icon'>
                         <img src={scissors} />
                         <h3>NAIL TRIM</h3>
                     </div>
-                    <p>Nail Trimming</p>
+                    <p></p>
                 </Card>
                 <Card>
                     <div className='icon'>
                         <img src={doggroom} />
                         <h3>CUSTOMIZE</h3>
                     </div>
-                    <p>Selections</p>
+                    <p></p>
                 </Card>
             </Cards>
             

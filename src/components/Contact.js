@@ -180,7 +180,7 @@ const Contact = () => {
           <Title>
             Questions? <br /> Let's Get In Touch
           </Title>
-          <Form>
+          <Form name="contact" method="POST" data-netlify="true">
             <LeftForm>
               <Input placeholder="Your Name" />
               <Input placeholder="Your Email" />
@@ -188,7 +188,7 @@ const Contact = () => {
             </LeftForm>
             <RightForm>
               <TextArea placeholder="Your Message" />
-              <Button>Send</Button>
+              <Button type="submit">Send</Button>
             </RightForm>
           </Form>
         </FormContainer>

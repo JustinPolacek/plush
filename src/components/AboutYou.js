@@ -53,7 +53,7 @@ const AboutYou = () => {
             </Description>
              
             <Image >
-               <img src={service2} />
+               <img src={plush2} />
             </Image>
             </Services>
         
