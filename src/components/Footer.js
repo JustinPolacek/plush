@@ -65,8 +65,7 @@ const Footer = () => {
         </List>
       </Wrapper>
       <Designer>
-        <p>Designed by </p>
-        <a href="https://www.justinpolacek.com">JustinPolacek.com</a>
+       
       </Designer>
     </Container>
   );
